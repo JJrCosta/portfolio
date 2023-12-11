@@ -1,11 +1,19 @@
-import Teste from './Teste'
-import { ResetGlobal } from './Reset'
+import { Container, ResetGlobal } from './Reset'
+import About from './containers/About'
+import Projects from './containers/Projects'
+import Sidebar from './containers/Sidebar'
 
 function App() {
   return (
     <>
       <ResetGlobal />
-      <Teste />
+      <Container>
+        <Sidebar />
+        <main>
+          <About />
+          <Projects />
+        </main>
+      </Container>
     </>
   )
 }
