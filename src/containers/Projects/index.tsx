@@ -1,14 +1,30 @@
 import Title from '../../components/Title'
+import ProjectCard from '../../components/ProjectCard'
+import { List } from './styles'
 
 const Projects = () => (
   <section>
     <Title fontSize={16}>Projects</Title>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas,
-      praesentium et, consectetur facere nisi ducimus quasi, dicta vitae odio
-      nobis placeat unde magni! Culpa sit maiores voluptates temporibus alias
-      illum?
-    </p>
+    <List>
+      <li>
+        <ProjectCard />
+      </li>
+      <li>
+        <ProjectCard />
+      </li>
+      <li>
+        <ProjectCard />
+      </li>
+      <li>
+        <ProjectCard />
+      </li>
+      <li>
+        <ProjectCard />
+      </li>
+      <li>
+        <ProjectCard />
+      </li>
+    </List>
   </section>
 )
 
