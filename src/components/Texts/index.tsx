@@ -1,12 +1,15 @@
 import { Text } from './styles'
 
 export type Props = {
-  children: string
+  children?: string
   color?: 'primary' | 'secondary'
+  fontSize?: number
 }
 
-const Texts = ({ children, color = 'primary' }: Props) => (
-  <Text color={color}>{children}</Text>
+const Texts = ({ children, color = 'primary', fontSize }: Props) => (
+  <Text fontSize={fontSize} color={color}>
+    {children}
+  </Text>
 )
 
 export default Texts

@@ -13,4 +13,5 @@ export const LinkButton = styled.a`
   margin-top: 24px;
   font-size: 14px;
   color: #fff;
+  cursor: pointer;
 `
